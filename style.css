@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -6,26 +6,31 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #1f2937;
+  padding: 16px;
+  height: 500px;
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
-  padding: 16px;
+  height: 50px;
+  margin: 0 auto;
+  width: 1000px;
+  flex: 0 1 auto;
 }
 
-.headcontainer {
+.links {
   display: flex;
-  justify-content: center;
+  gap: 16px;
 }
 
 .logo, .intro .text {
@@ -34,15 +39,29 @@ body {
 }
 
 .logo {
+  display: flex;
   font-size: 24px;
+  gap: 16px;
 }
 
+.header .container {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: auto;
+}
 .intro {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 50px;
+  flex: 1;
+  gap: 16px;
 }
 
 .intro .text {
   font-size: 48px;
+  margin-bottom: -8px;
 }
 
 .subtext, button, a {
@@ -59,8 +78,78 @@ button {
   border-radius: 8px;
   padding: 8px 32px;
   border-style: none;
+  flex: none;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 500px;
+}
+
+.info .text {
+  padding: 48px;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.info .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 850px;
+  margin: 0 auto;
+}
+
+.picture {
+  max-width: 175px;
+}
+
+.picture img {
+  min-height: 175px;
+  min-width: 175px;
+  border: 3px solid #3882f6;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.info .subtext {
+  color: #1f2937;
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  background: #e5e7eb;
+}
+
+.quote .text, .quote .attribution {
+  width: 800px;
+  margin: 0 auto;
+  color: #1f2937;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.quote .attribution {
+  padding: 8px 24px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  flex: 0;
 }
