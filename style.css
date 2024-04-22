@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   font-family: Roboto, sans-serif;
   margin: 0;
+  min-width: 1000px;
 }
 
 .header {
@@ -14,7 +15,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: #1f2937;
-  padding: 16px;
   height: 500px;
 }
 
@@ -22,10 +22,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 75px;
+  padding: 16px;
   margin: 0 auto;
   width: 1000px;
-  flex: 0 1 auto;
 }
 
 .links {
@@ -40,16 +40,24 @@ body {
 
 .logo {
   display: flex;
+  align-items: center;
   font-size: 24px;
   gap: 16px;
+}
+
+.logo img {
+  object-fit: cover;
 }
 
 .header .container {
   display: flex;
   justify-content: center;
   width: 1000px;
+  height: 235px;
+  padding: 0 16px;
   margin: auto;
 }
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -86,6 +94,14 @@ a {
   text-decoration: none;
 }
 
+.header .container img {
+  object-fit: cover;
+  overflow-clip-margin: border-box;
+  max-width: 50%;
+  height: 100%;
+  flex: 1 0 auto;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -95,17 +111,19 @@ a {
 }
 
 .info .text {
-  padding: 48px;
+  padding: 48px 0;
   color: #1f2937;
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
 }
 
 .info .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 850px;
+  width: 1000px;
+  padding: 0 75px;
   margin: 0 auto;
 }
 
@@ -119,6 +137,7 @@ a {
   border: 3px solid #3882f6;
   border-radius: 16px;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .info .subtext {
@@ -131,6 +150,7 @@ a {
   flex-direction: column;
   justify-content: center;
   height: 500px;
+  padding: 0 100px;
   background: #e5e7eb;
 }
 
@@ -157,21 +177,22 @@ a {
 .call {
   display: flex;
   height: 350px;
-  padding: 48px 96px;
-  margin: auto;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .call .box {
   display: flex;
-  width: 1000px;
+  width: 968px;
   align-items: center;
   justify-content: space-between;
   padding: 48px 96px;
   border-radius: 8px;
+  flex: none;
   margin: auto;
 }
 
-.container .text{
+.call .text{
   font-size: 24px;
   font-weight: 700;
   color: #e5e7eb;
