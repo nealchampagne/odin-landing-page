@@ -1,7 +1,9 @@
+/*Set box-sizing on all elements to border box*/
 * {
   box-sizing: border-box;
 }
 
+/*Set up the broad flex box divisions, font, and minimum page width*/
 body {
   display: flex;
   flex-direction: column;
@@ -10,6 +12,7 @@ body {
   min-width: 1000px;
 }
 
+/*The header is also split into several flex containers*/
 .header {
   display: flex;
   flex-direction: column;
@@ -18,21 +21,28 @@ body {
   height: 500px;
 }
 
+
 .banner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   height: 75px;
   padding: 16px;
   margin: 0 auto;
   width: 1000px;
 }
 
+/*Space the links using flex*/
 .links {
   display: flex;
   gap: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Styling the title and logo*/
 .logo, .intro .text {
   color: #f9faf8;
   font-weight: 900;
@@ -49,6 +59,7 @@ body {
   object-fit: cover;
 }
 
+/*Now time for the intro information section*/
 .header .container {
   display: flex;
   justify-content: center;
@@ -72,6 +83,7 @@ body {
   margin-bottom: -8px;
 }
 
+/*Styling for light subtext, buttons, and links*/
 .subtext, button, a {
   font-size: 18px;
   color: #e5e7eb;
@@ -90,10 +102,6 @@ button {
   font-weight: 400;
 }
 
-a {
-  text-decoration: none;
-}
-
 .header .container img {
   object-fit: cover;
   overflow-clip-margin: border-box;
@@ -102,6 +110,7 @@ a {
   flex: 1 0 auto;
 }
 
+/*Styling for info/photo section*/
 .info {
   display: flex;
   flex-direction: column;
@@ -145,6 +154,7 @@ a {
   text-align: center;
 }
 
+/*Quote section styling*/
 .quote {
   display: flex;
   flex-direction: column;
@@ -174,6 +184,7 @@ a {
   flex: 0;
 }
 
+/*Styling for call to action*/
 .call {
   display: flex;
   height: 350px;
@@ -202,6 +213,8 @@ a {
   border: 2px solid #e5e7eb;
 }
 
+
+/*Easy peasy footer styling*/
 .footer {
   display: flex;
   justify-content: center;
